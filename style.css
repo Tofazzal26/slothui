@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
 :root {
   --primary-color: #4f46e5;
   --secondary-color: #475569;
@@ -8,6 +10,7 @@
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
+  font-family: "Plus Jakarta Sans", sans-serif;
 }
 html {
   scroll-behavior: smooth;
@@ -16,4 +19,174 @@ html {
 .container {
   width: 84%;
   margin: 0 auto;
+}
+
+/* header style start */
+
+.headerBackgroundColor {
+  background-color: var(--white);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  top: 0px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+
+.headerParent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0px;
+}
+
+.headerMenu {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  font-size: 16px;
+}
+
+.headerMenu li {
+  text-decoration: none;
+  list-style: none;
+  color: var(--secondary-color);
+  position: relative;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.headerMenu li:hover {
+  color: var(--primary-color);
+  transition: 0.3s ease;
+}
+
+.homeNav {
+  text-decoration: none;
+}
+
+.activeNav {
+  color: var(--secondary-color);
+  text-decoration: none;
+  transition: 0.3s ease;
+  font-weight: 600;
+  cursor: pointer;
+}
+.activeNav:hover {
+  color: var(--primary-color);
+  transition: 0.3s ease;
+}
+
+.logInBtn {
+  color: var(--white);
+  background-color: var(--primary-color);
+  padding: 13px 25px;
+  border-radius: 25px;
+  font-weight: 600;
+  border: none;
+  font-size: 16px;
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+
+.SignUpBtn {
+  color: #475569;
+  padding: 12px 25px;
+  background: transparent;
+  border-radius: 25px;
+  font-weight: 600;
+  border: 1px solid #cbd5e1;
+  font-size: 16px;
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+
+.rightSide {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+}
+
+.menu {
+  display: none;
+  position: relative;
+}
+.menuList {
+  position: absolute;
+  background-color: var(--white);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  right: 2px;
+  padding: 10px;
+  display: none;
+  transition: 0.3s ease;
+}
+.hamburgerMenuList li {
+  font-size: 10px;
+  text-decoration: none;
+  list-style: none;
+  color: var(--secondary-color);
+  margin: 10px 0px;
+  transition: 0.3s ease;
+}
+
+.hamburgerMenuList li:hover {
+  color: var(--primary-color);
+  transition: 0.3s ease;
+}
+
+.menuActive {
+  display: block;
+  animation: slideIn 0.3s ease;
+}
+
+.menuShowActive {
+  transition: 0.3s ease;
+  transform: rotate(90deg);
+}
+
+.hamburgerMenu {
+  transition: 0.3s ease;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(200px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+/* header style end */
+
+/* phone device responsibe code */
+
+@media only screen and (max-width: 640px) {
+  .container {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .middle {
+    display: none;
+  }
+  .rightSide {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
+  .hamburgerMenu {
+    width: 25px;
+    height: 25px;
+  }
 }
