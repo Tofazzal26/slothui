@@ -432,8 +432,57 @@ html {
 /* who style end  */
 
 /* Testimonials style start */
+.Testimonials {
+  background-color: #f8fafc;
+}
+.peopleParagraph {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--secondary-color);
+  width: 330px;
+  line-height: 30px;
+  margin: 24px 0px;
+}
+.userName {
+  font-size: 16px;
+  font-weight: 700;
+}
 
+.userStatus {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--secondary-color);
+  margin-top: 2px;
+}
+.userParent {
+  display: flex;
+  gap: 10px;
+}
+.starParent {
+  display: flex;
+  gap: 10px;
+}
+
+.cardParent {
+  margin: 65px 0px;
+  columns: 3;
+  column-gap: 30px;
+  padding-bottom: 90px;
+}
+
+.card {
+  border: 2px solid #e2e8f0;
+  border-radius: 25px;
+  padding: 24px;
+  height: 100%;
+  break-inside: avoid;
+  margin-bottom: 30px;
+  background-color: white;
+}
 /* Testimonials style end */
+/* Our Office style start */
+
+/* Our Office style end */
 
 /* phone device responsibe code */
 
@@ -645,6 +694,13 @@ html {
   /* who style end  */
 
   /* Testimonials style start */
-
+  .cardParent {
+    margin: 65px 0px;
+    columns: 1;
+    column-gap: 30px;
+    padding-bottom: 60px;
+  }
   /* Testimonials style end */
+  /* Our Office style start */
+  /* Our Office style end */
 }
