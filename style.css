@@ -303,7 +303,63 @@ html {
 /* main style end */
 
 /* Achieve style start */
+.achieve {
+  background-color: #f8fafc;
+  margin-top: 80px;
+  padding: 80px 0px;
+}
+
+.achieveText {
+  text-align: center;
+}
+
+.achieveData h2 {
+  font-weight: 700;
+  font-size: 60px;
+  color: var(--primary-color);
+}
+.achieveData p {
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--secondary-color);
+}
+.achieveParent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 110px;
+  margin-top: 50px;
+  text-align: center;
+}
+.data {
+  position: relative;
+}
+.scale {
+  position: relative;
+}
+.data::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 95px;
+  top: 2px;
+  right: -55px;
+  background-color: #cbd5e1;
+}
+
+.scale::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 95px;
+  top: 2px;
+  left: -55px;
+  background-color: #cbd5e1;
+}
 /* Achieve style end */
+
+/* who style start  */
+/* who style end  */
 
 /* phone device responsibe code */
 
@@ -417,5 +473,40 @@ html {
   }
   /* feature style end  */
   /* Achieve style start */
+  .achieve {
+    background-color: #f8fafc;
+    margin-top: 60px;
+    padding: 60px 0px;
+  }
+  .achieveParent {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  .data::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 350px;
+    top: -38px;
+    bottom: 0px;
+    left: 86px;
+    transform: rotate(90deg);
+    background-color: #cbd5e1;
+  }
+  .scale::before {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 350px;
+    top: -196px;
+    left: 86px;
+    background-color: #cbd5e1;
+    transform: rotate(90deg);
+  }
   /* Achieve style end */
+  /* who style start  */
+  /* who style end  */
 }
