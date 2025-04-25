@@ -263,7 +263,7 @@ html {
 .commonHead {
   font-size: 36px;
   font-weight: 800;
-  margin: 24px 0px;
+  margin: 20px 0px;
 }
 .commonParagraph {
   font-size: 20px;
@@ -359,7 +359,81 @@ html {
 /* Achieve style end */
 
 /* who style start  */
+.whoParagraph {
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--secondary-color);
+  width: 800px;
+  line-height: 35px;
+}
+
+.whoLeftSide {
+  position: relative;
+}
+
+.one::before {
+  content: "";
+  width: 4px;
+  height: 120px;
+  position: absolute;
+  background-color: var(--primary-color);
+  left: -24px;
+  top: -24px;
+  border-radius: 30px;
+}
+
+.two::before {
+  content: "";
+  width: 4px;
+  height: 155px;
+  position: absolute;
+  background-color: #e0e7ff;
+  left: -24px;
+  top: -42px;
+  border-radius: 30px;
+}
+
+.three::before {
+  content: "";
+  width: 4px;
+  height: 130px;
+  position: absolute;
+  background-color: #e0e7ff;
+  left: -24px;
+  top: -22px;
+  border-radius: 30px;
+}
+
+.whoLeftSide h2 {
+  color: var(--secondary-color);
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.whoLeftSide p {
+  color: var(--secondary-color);
+  font-size: 16px;
+  font-weight: 400;
+  width: 460px;
+  margin-top: 12px;
+}
+.whoParent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 60px 0px;
+}
+
+.what {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
 /* who style end  */
+
+/* Testimonials style start */
+
+/* Testimonials style end */
 
 /* phone device responsibe code */
 
@@ -508,5 +582,69 @@ html {
   }
   /* Achieve style end */
   /* who style start  */
+  .whoParent {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  .twodashboardImg {
+    width: 100%;
+  }
+  .what {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    margin-left: 30px;
+  }
+
+  .whoLeftSide h2 {
+    color: var(--secondary-color);
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .whoLeftSide p {
+    width: 100%;
+  }
+
+  .one::before {
+    content: "";
+    width: 4px;
+    height: 130px;
+    position: absolute;
+    background-color: var(--primary-color);
+    left: -24px;
+    top: -14px;
+    border-radius: 30px;
+  }
+
+  .two::before {
+    content: "";
+    width: 4px;
+    height: 200px;
+    position: absolute;
+    background-color: #e0e7ff;
+    left: -24px;
+    top: -43px;
+    border-radius: 30px;
+  }
+
+  .three::before {
+    content: "";
+    width: 4px;
+    height: 170px;
+    position: absolute;
+    background-color: #e0e7ff;
+    left: -24px;
+    top: -22px;
+    border-radius: 30px;
+  }
+  .whoParagraph {
+    width: 100%;
+  }
   /* who style end  */
+
+  /* Testimonials style start */
+
+  /* Testimonials style end */
 }
