@@ -260,7 +260,50 @@ html {
 
 /* main style start */
 
+.commonHead {
+  font-size: 36px;
+  font-weight: 800;
+  margin: 24px 0px;
+}
+.commonParagraph {
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--secondary-color);
+  width: 800px;
+  margin: 0 auto;
+  line-height: 35px;
+}
+.feature {
+  text-align: center;
+}
+.mainFeature {
+  text-align: center;
+}
+.mainFeature h2 {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-weight: 700;
+  font-size: 20px;
+}
+.mainFeature p {
+  font-weight: 400;
+  font-size: 16px;
+  width: 380px;
+  margin: 0 auto;
+  line-height: 25px;
+  color: var(--secondary-color);
+}
+.featureParent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 50px;
+  margin-top: 70px;
+}
 /* main style end */
+
+/* Achieve style start */
+/* Achieve style end */
 
 /* phone device responsibe code */
 
@@ -350,6 +393,29 @@ html {
   .brandLastSide img {
     width: 95px;
   }
-
   /* brand style end */
+  /* feature style start  */
+  .commonHead {
+    font-size: 30px;
+    font-weight: 800;
+    margin: 20px 0px;
+  }
+  .commonParagraph {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--secondary-color);
+    width: 100%;
+    line-height: 28px;
+  }
+
+  .featureParent {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    gap: 40px;
+    margin-top: 40px;
+  }
+  /* feature style end  */
+  /* Achieve style start */
+  /* Achieve style end */
 }
