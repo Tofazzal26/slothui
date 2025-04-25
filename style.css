@@ -177,7 +177,7 @@ html {
     rgba(154, 156, 238, 1) 0%,
     rgba(247, 252, 255, 1) 50%
   );
-  height: 130vh;
+  height: 132vh;
   margin-top: 90px;
 }
 
@@ -234,6 +234,33 @@ html {
 }
 
 /* banner style end */
+.brandFirstSide {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.brandLastSide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 125px;
+  margin-top: 30px;
+}
+
+.brandChild {
+  padding: 40px 0px;
+}
+/* brand style start */
+
+.brand {
+  background-color: #f8fafc;
+}
+
+/* brand style end */
+
+/* main style start */
+
+/* main style end */
 
 /* phone device responsibe code */
 
@@ -302,6 +329,27 @@ html {
   .banner {
     height: 115vh;
   }
-}
+  /* banner style  end */
 
-/* banner style  end */
+  /* brand style start */
+  .brandFirstSide {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .brandFirstSide img {
+    width: 100px;
+  }
+
+  .brandLastSide {
+    flex-wrap: wrap;
+    justify-content: start;
+    gap: 10px;
+    margin-top: 0px;
+    margin-left: 15px;
+  }
+  .brandLastSide img {
+    width: 95px;
+  }
+
+  /* brand style end */
+}
