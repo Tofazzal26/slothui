@@ -527,8 +527,62 @@ html {
 /* Our Office style end */
 
 /* app style start */
-
+.app {
+  background-color: #eef2ff;
+  position: relative;
+}
+.appLeftSide h2 {
+  font-weight: 800;
+  font-size: 36px;
+}
+.appLeftSide p {
+  width: 560px;
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--secondary-color);
+  line-height: 30px;
+  margin: 24px 0px 48px 0px;
+}
+.learnMore {
+  border: 1px solid var(--primary-color);
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 12px 20px;
+  color: var(--primary-color);
+}
+.getStarted {
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 13px 20px;
+  color: white;
+  border: none;
+  background-color: var(--primary-color);
+}
+.appBtn {
+  display: flex;
+  gap: 15px;
+}
+.appParent {
+  padding: 200px 0px;
+}
+.balance {
+  position: absolute;
+  bottom: 0px;
+  right: 200px;
+}
+.report {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+.phone {
+  display: none;
+}
 /* app style end */
+/* FAQ style start */
+/* FAQ style end */
 
 /* phone device responsibe code */
 
@@ -757,6 +811,36 @@ html {
   /* Our Office style end */
 
   /* app style start */
-
+  .balance {
+    display: none;
+  }
+  .report {
+    display: none;
+  }
+  .appBtn {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .appParent {
+    padding: 60px 0px 500px 0px;
+  }
+  .appLeftSide p {
+    width: 100%;
+  }
+  .phone {
+    display: block;
+  }
+  .phoneBalance {
+    position: absolute;
+    bottom: 0px;
+  }
+  .phoneReport {
+    position: absolute;
+    right: 5px;
+    top: 530px;
+  }
   /* app style end */
+  /* FAQ style start */
+  /* FAQ style end */
 }
