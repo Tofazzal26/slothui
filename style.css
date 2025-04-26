@@ -687,6 +687,43 @@ html {
 .footerChild {
   background-color: #f8fafc;
 }
+.list h2 {
+  font-size: 16px;
+  font-weight: 700;
+}
+.list ul li {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--secondary-color);
+  text-decoration: none;
+  margin-top: 12px;
+}
+.list ul {
+  list-style: none;
+  margin-top: 16px;
+}
+.listParent {
+  padding: 95px 0px;
+}
+.listFlex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.copy {
+  color: #94a3b8;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.copyRight {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 2px solid #cbd5e1;
+  padding-top: 32px;
+  margin-top: 42px;
+}
 /* footer style end */
 
 /* phone device responsibe code */
@@ -947,5 +984,25 @@ html {
   }
   /* app style end */
   /* footer style start */
+  .listFlex {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 32px;
+  }
+
+  .copyRight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .listParent {
+    padding: 40px 0px;
+  }
+
   /* footer style end */
 }
