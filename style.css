@@ -582,7 +582,112 @@ html {
 }
 /* app style end */
 /* FAQ style start */
+.faq {
+  background-color: #f8fafc;
+  padding: 95px 0px;
+}
+.faqQuestion {
+  text-align: center;
+}
+
+.faqQuestion button {
+  background-color: #eef2ff;
+  color: var(--primary-color);
+  border-radius: 25px;
+  border: none;
+  padding: 8px 15px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.faqParent {
+  margin-top: 65px;
+}
+.accordion {
+  max-width: 800px;
+  margin: auto;
+  border-top: 1px solid #e2e8f0;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: transparent;
+  transition: background 0.3s ease;
+  text-align: left;
+}
+
+.accordion-header:hover {
+  background-color: #f1f5f9;
+}
+
+.accordion-header .left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+  text-align: left;
+}
+
+.accordion-header span {
+  color: #1e293b;
+  display: block;
+}
+
+.accordion-item input {
+  display: none;
+}
+
+.accordion-body {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 20px;
+  color: #64748b;
+  font-size: 15px;
+  text-align: left;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.accordion-item input:checked ~ .accordion-body {
+  max-height: 500px;
+  padding: 20px;
+}
+
+.arrow-img {
+  width: 18px;
+  height: 18px;
+  background-image: url("/images/arrowDown.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: transform 0.3s ease;
+}
+
+.accordion-item input:checked + .accordion-header .arrow-img {
+  background-image: url("/images/arrowUp.svg");
+}
+
+.faq-icon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
 /* FAQ style end */
+
+/* footer style start */
+.footerChild {
+  background-color: #f8fafc;
+}
+/* footer style end */
 
 /* phone device responsibe code */
 
@@ -841,6 +946,6 @@ html {
     top: 530px;
   }
   /* app style end */
-  /* FAQ style start */
-  /* FAQ style end */
+  /* footer style start */
+  /* footer style end */
 }
