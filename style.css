@@ -778,7 +778,7 @@ html {
 
   .dashboard img {
     padding-top: 30px;
-    width: 490px;
+    width: 550px;
     height: 600px;
   }
   .phoneDashboard {
@@ -787,11 +787,11 @@ html {
     right: 1%;
   }
   .phoneDashboard img {
-    width: 300px;
+    width: 350px;
     height: 300px;
   }
   .banner {
-    height: 60vh;
+    height: 80vh;
   }
   /* banner style  end */
 
