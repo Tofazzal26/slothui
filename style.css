@@ -773,7 +773,7 @@ html {
   .dashboard {
     position: absolute;
     top: 75%;
-    left: -60px;
+    left: 10%;
   }
 
   .dashboard img {
