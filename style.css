@@ -235,15 +235,16 @@ html {
 
 /* banner style end */
 .brandFirstSide {
-  display: flex;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  justify-content: center;
   align-items: center;
 }
 .brandLastSide {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
   justify-content: center;
   align-items: center;
-  gap: 125px;
   margin-top: 30px;
 }
 
@@ -797,16 +798,19 @@ html {
 
   /* brand style start */
   .brandFirstSide {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-self: center;
+    justify-content: center;
   }
   .brandFirstSide img {
     width: 100px;
   }
 
   .brandLastSide {
-    flex-wrap: wrap;
-    justify-content: start;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
     gap: 10px;
     margin-top: 0px;
     margin-left: 15px;
