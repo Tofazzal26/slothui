@@ -980,11 +980,13 @@ html {
   .phoneBalance {
     position: absolute;
     bottom: 0px;
+    top: 500px;
+    left: 50px;
   }
   .phoneReport {
     position: absolute;
-    right: 5px;
-    top: 530px;
+    right: 50px;
+    top: 450px;
   }
   /* app style end */
   /* footer style start */
