@@ -917,18 +917,18 @@ html {
   .two::before {
     content: "";
     width: 4px;
-    height: 200px;
+    height: 130px;
     position: absolute;
     background-color: #e0e7ff;
     left: -24px;
-    top: -43px;
+    top: -15px;
     border-radius: 30px;
   }
 
   .three::before {
     content: "";
     width: 4px;
-    height: 170px;
+    height: 130px;
     position: absolute;
     background-color: #e0e7ff;
     left: -24px;
