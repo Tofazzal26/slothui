@@ -1012,3 +1012,20 @@ html {
 
   /* footer style end */
 }
+
+@media only screen and (min-width: 641px) and (max-width: 1366px) {
+  .banner {
+    background: #9a9cee;
+    background: linear-gradient(
+      358deg,
+      rgba(154, 156, 238, 1) 0%,
+      rgba(247, 252, 255, 1) 50%
+    );
+    height: 170vh;
+    margin-top: 90px;
+  }
+  .dashboard {
+    position: absolute;
+    left: -3%;
+  }
+}
